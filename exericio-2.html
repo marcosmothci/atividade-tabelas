@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo tabelas</title>
+
+    <style>        
+
+            table, td {
+                border: 3px ridge black;
+                border-collapse: collapse;
+                
+            }
+
+            td:nth-child(even){
+                
+                background-color: blue;
+            }
+
+            table:hover td:nth-child(even){
+                
+                background-color: yellow;
+            }
+
+            td:nth-child(odd){
+                
+                background-color: yellow;
+            }
+
+            table:hover td:nth-child(odd){
+                
+                background-color: blue;
+            }
+        table, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 100vw;
+            height: 75vh;
+            margin-bottom: 50px;
+        }
+        
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        #menu {
+            width: 25%;
+        }
+        #conteudo {
+            width: 75%;
+        }
+
+        thead {
+            height: 10%;
+        }
+       
+        tfoot {
+            height: 5%;
+        }
+    </style>  
+
+</head>
+
+<body>
+    
+    <table>
+        <thead>
+            <tr>
+                <td colspan="2" class="center">TOPO</td>
+            </tr>
+        </thead>
+        
+        <tbody>    
+            <tr>
+                <td id="menu" rowspan="5" class="center">MENU</td>
+            </tr>
+            
+            <tr id="conteudo" class="center">
+                <td>CONTEUDO</td>
+                
+            </tr>
+
+            <tfoot>
+                <td colspan="2" class="center">foot</td>
+            </tfoot>
+        </tbody>
+    </table>
+    <button><a href="/index.html">VOLTAR</a></button>
+</body>
+</html>

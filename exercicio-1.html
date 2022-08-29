@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo tabelas</title>
+
+    <style>        
+
+            table{
+                border-collapse: collapse;
+            }
+
+            table, td {
+                border: 3px ridge black;
+                border-collapse: collapse;
+                
+            }
+
+            td:nth-child(even){
+                
+                background-color: blue;
+            }
+
+            table:hover td:nth-child(even){
+                
+                background-color: yellow;
+            }
+
+            td:nth-child(odd){
+                
+                background-color: yellow;
+            }
+
+            table:hover td:nth-child(odd){
+                
+                background-color: blue;
+            }
+            table {
+            margin-bottom: 50px;
+        }
+
+            
+            td {
+            width: 100px;
+        }
+        
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+    </style>  
+
+</head>
+
+<body>
+    
+    <table>
+      
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            
+            <tr class="center">
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+
+            <tr class="right">
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        
+    </table>
+<br><br>
+    <table>
+       
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            
+            <tr class="center">
+                <td colspan="3">4</td>
+            </tr>
+
+            <tr class="right">
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+        
+    </table>
+<br><br>
+    <table>
+        
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="3" class="center">3</td>
+            </tr>
+            
+            <tr class="center">
+                <td colspan="2">4</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        
+    </table>
+
+    <button><a href="/index.html">VOLTAR</a></button>
+
+</body>
+</html>
